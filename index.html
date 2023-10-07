@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="contenedor-header" id="header">
@@ -28,13 +28,13 @@
                     <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active menu-gris" aria-current="page" href="#">Los oradores</a>
+                    <a class="nav-link active menu-gris" aria-current="page" href="#oradores">Los oradores</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active menu-gris" aria-current="page" href="#">El lugar y la fecha</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active menu-gris" aria-current="page" href="#">Conviértete en orador</a>
+                    <a class="nav-link active menu-gris" aria-current="page" href="#conviertete-orador">Conviértete en orador</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active comprar-verde" aria-current="page" href="#">Comprar tickets</a>
@@ -42,9 +42,9 @@
                   <li class="nav-item dropdown">
                     <ul class="dropdown-menu menu">
                       <li><a class="dropdown-item" href="#">La conferencia</a></li>
-                      <li><a class="dropdown-item" href="#">Los oradores</a></li>
+                      <li><a class="dropdown-item" href="#oradores">Los oradores</a></li>
                       <li><a class="dropdown-item" href="#">El lugar y la fecha</a></li>
-                      <li><a class="dropdown-item" href="#">Conviértete en orador</a></li>
+                      <li><a class="dropdown-item" href="#conviertete-orador">Conviértete en orador</a></li>
                       <li><a class="dropdown-item" href="#">Comprar tickets</a></li>
                     </ul>
                 </li>
@@ -83,7 +83,7 @@
                     </div>
             </div>
     </main> 
-    <section class="contenedor-oradores">
+    <section class="contenedor-oradores" id="oradores">
         <h2>Conocé a los <span>oradores</span></h2>
         <div class="contenedor-cards d-flex gap-5 flex-xl-row flex-lg-column flex-sm-column  justify-content-around align-items-center">
             <article class="card card-orador">
@@ -150,7 +150,7 @@
             </div>
         </div>
     </aside>
-    <section class="contenedor-form">
+    <section class="contenedor-form" id="conviertete-orador">
         <h2>Conviértete en <span>orador</span></h2>
         <p class="pb-3">Anotate como orador para dar una <span> <a href="#" target="_blank">charla ignite</a> .</span> Cuéntanos de qué quieres hablar!</p>
         <form action="" class="formulario">
