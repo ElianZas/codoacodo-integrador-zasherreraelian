@@ -4,5 +4,4 @@ Realicé el siguiente proyecto que consta en replicar la siguiente página web.
 
 [![final-front-2021.jpg](https://i.postimg.cc/vmWbk6tB/final-front-2021.jpg)](https://postimg.cc/4KNDhyMk)
 
-## RESULTADO FINAL
-[SITIO](https://elianzas.github.io/codoacodo-integrador-zasherreraelian.github.io/)
+## [RESULTADO FINAL](https://elianzas.github.io/codoacodo-integrador-zasherreraelian.github.io/)
