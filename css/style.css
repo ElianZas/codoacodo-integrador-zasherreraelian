@@ -1,0 +1,117 @@
+body{
+    font-family: Montserrat;
+}
+header{
+width:100%;
+}
+.barranav{
+    background-color: #353A40;
+    display:flex;
+    align-items: center;
+    position:relative;
+    z-index: 50;
+}
+.barranav .contenedor-nav{
+    padding-left:5%;
+    display:flex;
+    width:50%;
+    align-items:center;
+}
+.barranav .logo{
+    width:5rem;
+}
+.barranav .tituloLogo{
+    font-size: 1rem;
+    font-weight: 600;
+    color:white;
+}
+.barranav .listaMenu{
+    font-size: .8rem;
+    font-weight: 500;
+    padding-right:5%;
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    color: #9A9EA1;
+}
+.barranav .listaMenu :first-child{
+    color:white;
+}
+.barranav .listaMenu :last-child{
+    color: #28A242;
+}
+
+.contenido-principal{
+    display:grid;
+    grid-template-rows: 0.9fr 1fr;
+}
+
+.banner-principal{
+    grid-row: 1/2;
+}
+.banner-principal h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.banner-descripcion p{
+    max-width:75%;
+    font-size: .8rem;
+}
+.card-texto-botones{
+    transform: translateX(20%)!important;
+    text-align: end;
+    padding-right: 2rem !important;
+    padding-left: 10% !important;
+}
+.banner-descripcion{
+    gap:1rem;
+    display:flex;
+    text-align: end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.oradores{
+    margin-top: 7rem;
+    grid-row: 2/3;
+
+}
+.oradores h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: .8rem;
+}
+.oradores h2 span{
+    display:block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.oradores .contenedor-cards h3{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.card-orador{
+    max-width:18rem;
+    min-width:10rem;
+}
+
+.card-ciudad-text{
+    color:white;
+}
+.form-convocatoria{
+    text-align: center;
+    margin-top: 1rem;
+}
+.form-convocatoria h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: .8rem;
+}.form-convocatoria h2 span{
+    display:block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
