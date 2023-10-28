@@ -20,7 +20,7 @@ newHeader.innerHTML = `
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                          <a class="nav-link active" aria-current="page" href="../index.html">La conferencia</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link active menu-gris" aria-current="page" href="#oradores">Los oradores</a>
@@ -37,7 +37,7 @@ newHeader.innerHTML = `
                       </li>
                       <li class="nav-item dropdown">
                           <ul class="dropdown-menu menu">
-                              <li><a class="dropdown-item" href="#">La conferencia</a></li>
+                              <li><a class="dropdown-item" href="../index.html">La conferencia</a></li>
                               <li><a class="dropdown-item" href="#oradores">Los oradores</a></li>
                               <li><a class="dropdown-item" href="#">El lugar y la fecha</a></li>
                               <li><a class="dropdown-item" href="#conviertete-orador">Conviértete en orador</a></li>
