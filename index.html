@@ -1,90 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Conf Bs As</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Hoja Reset para quitar estilos por defecto que tiene el navegador-->
     <link rel="stylesheet" href="./css/reset.css">
+    <!--Fuente | Tipografía | Externa-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <!--Hoja de estilos CSS-->
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
+    <!--HEADER ##Menú-Barra de navegación + Logo-->
     <header class="contenedor-header" id="header">
+    <!--Nav de Bootstrap-->
         <nav class="navbar navbar-expand-lg bg-nav barranav">
             <div class="container-fluid">
-                <div class="contenedor-nav">            
+                <div class="contenedor-nav">
                     <img class="logo" src="./images/codoacodo.png" alt="Logo Codo a Codo">
                     <h1 class="tituloLogo">Conf Bs As</h1>
-            </div>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active menu-gris" aria-current="page" href="#oradores">Los oradores</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active menu-gris" aria-current="page" href="#">El lugar y la fecha</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active menu-gris" aria-current="page" href="#conviertete-orador">Conviértete en orador</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active comprar-verde" aria-current="page" href="#">Comprar tickets</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <ul class="dropdown-menu menu">
-                      <li><a class="dropdown-item" href="#">La conferencia</a></li>
-                      <li><a class="dropdown-item" href="#oradores">Los oradores</a></li>
-                      <li><a class="dropdown-item" href="#">El lugar y la fecha</a></li>
-                      <li><a class="dropdown-item" href="#conviertete-orador">Conviértete en orador</a></li>
-                      <li><a class="dropdown-item" href="#">Comprar tickets</a></li>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-gris" aria-current="page" href="#oradores">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-gris" aria-current="page" href="#">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active menu-gris" aria-current="page"
+                                href="#conviertete-orador">Conviértete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active comprar-verde" aria-current="page" href="./pages/comprartickets.html">Comprar tickets</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <ul class="dropdown-menu menu">
+                                <li><a class="dropdown-item" href="#">La conferencia</a></li>
+                                <li><a class="dropdown-item" href="#oradores">Los oradores</a></li>
+                                <li><a class="dropdown-item" href="#">El lugar y la fecha</a></li>
+                                <li><a class="dropdown-item" href="#conviertete-orador">Conviértete en orador</a></li>
+                                <li><a class="dropdown-item" href="#">Comprar tickets</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-                </ul>
-              </div>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
+    <!--MAIN ##Carousel de Bootstrap-->
     <main id="carouselExample" class="carousel slide banner-contenedor" data-bs-ride="carousel">
-            <div class="carousel-inner ">
-                <div class="carousel-item active banner-filtro">
-                    <img src="./images/ba1.jpg" class="d-block w-100" alt="Buenos Aires Edicio y Árboles, Calle">
-                </div>
-                <div class="carousel-item banner-filtro">
-                    <img src="./images/ba2.jpg" class="d-block w-100" alt="Edificio BS As">
-                </div>
-                <div class="carousel-item banner-filtro">
-                    <img src="./images/ba3.jpg" class="d-block w-100"alt="BS AS Obelisco">
-                </div>
+        <div class="carousel-inner ">
+            <div class="carousel-item active banner-filtro">
+                <img src="./images/ba1.jpg" class="d-block w-100" alt="Buenos Aires Edicio y Árboles, Calle">
             </div>
-            <div class="banner-texto card-img-overlay d-flex flex-column gap-4 justify-content-center text-end">
-                    <h5 class="card-title">Conf Bs As</h5>
-                    <p class="card-text">
-                    Bs As llega por primera vez a la Argentina. Un evento para compartir con
-                    nuestra comunidad el conocimiento y experiencia de los expertos que 
-                    están creando el futuro de Internet.Ven a conocer a miembros del
-                    evento, a otros estudiantes de Codo a Codo y los oradores primer
-                    nivel que tenemos para ti. 
-                    Te esperamos!
-                    </p>
-                    <div>
-                        <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-                        <button type="button" class="btn btn-comprar" onclick="location.href='HTML/ticket.html'" id="boton-enviar">
-                            Comprar tickets
-                        </button>
-                    </div>
+            <div class="carousel-item banner-filtro">
+                <img src="./images/ba2.jpg" class="d-block w-100" alt="Edificio BS As">
             </div>
-    </main> 
+            <div class="carousel-item banner-filtro">
+                <img src="./images/ba3.jpg" class="d-block w-100" alt="BS AS Obelisco">
+            </div>
+        </div>
+        <div class="banner-texto card-img-overlay d-flex flex-column gap-4 justify-content-center text-end">
+            <h5 class="card-title">Conf Bs As</h5>
+            <p class="card-text">
+                Bs As llega por primera vez a la Argentina. Un evento para compartir con
+                nuestra comunidad el conocimiento y experiencia de los expertos que
+                están creando el futuro de Internet.Ven a conocer a miembros del
+                evento, a otros estudiantes de Codo a Codo y los oradores primer
+                nivel que tenemos para ti.
+                Te esperamos!
+            </p>
+            <div class="botones-card-banner">
+                <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
+                <button type="button" class="btn btn-comprar" onclick="location.href='HTML/ticket.html'"
+                    id="boton-enviar">
+                    Comprar tickets
+                </button>
+            </div>
+        </div>
+    </main>
+    <!--Sección ##Oradores-->
     <section class="contenedor-oradores" id="oradores">
         <h2>Conocé a los <span>oradores</span></h2>
+        <!--Cards con propiedades de Bootstrap-->
         <div class="contenedor-cards d-flex gap-5 flex-xl-row flex-lg-column flex-sm-column  justify-content-around align-items-center">
             <article class="card card-orador">
                 <img src="./images/steve.jpg" class="card-img-top" alt="retrato steve jobs">
@@ -94,7 +110,9 @@
                         <a class="badge text-bg-info">React</a>
                     </div>
                     <h3 class="mb-2">Steve Jobs</h3>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dicta ipsum consectetur enim quibusdam modi nobis fugit exercitationem excepturi, numquam voluptas, non veritatis sint incidunt architecto at sequi, animi repudiandae.</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dicta ipsum
+                        consectetur enim quibusdam modi nobis fugit exercitationem excepturi, numquam voluptas, non
+                        veritatis sint incidunt architecto at sequi, animi repudiandae.</p>
                 </div>
             </article>
             <article class="card card-orador">
@@ -105,7 +123,9 @@
                         <a class="badge text-bg-info">React</a>
                     </div>
                     <h3 class="mb-2">Bill Gates</h3>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dicta ipsum consectetur enim quibusdam modi nobis fugit exercitationem excepturi, numquam voluptas, non veritatis sint incidunt architecto at sequi, animi repudiandae.</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dicta ipsum
+                        consectetur enim quibusdam modi nobis fugit exercitationem excepturi, numquam voluptas, non
+                        veritatis sint incidunt architecto at sequi, animi repudiandae.</p>
                 </div>
             </article>
             <article class="card card-orador">
@@ -116,43 +136,52 @@
                         <a class="badge text-bg-danger">Startups</a>
                     </div>
                     <h3 class="mb-2">Ada Lovelace</h3>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dicta ipsum consectetur enim quibusdam modi nobis fugit exercitationem excepturi, numquam voluptas, non veritatis sint incidunt architecto at sequi, animi repudiandae.</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dicta ipsum
+                        consectetur enim quibusdam modi nobis fugit exercitationem excepturi, numquam voluptas, non
+                        veritatis sint incidunt architecto at sequi, animi repudiandae.</p>
                 </div>
             </article>
         </div>
-    </section>  
+    </section>
+    <!--Aside ##Ciudad Más info-->
     <aside class="card-ciudad row g-1">
         <div class=" col-lg-6 d-flex">
-            <div id="carouselExampleSlidesOnly" class="carousel slide"data-bs-ride="carousel">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./images/honolulu.jpg" class="d-block w-100 img-aside" alt="Playa Bs As">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100 img-aside" src="./images/hawaii3.jpg" alt="Edificio BS As">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100 img-aside" src="./images/hawaii2.jpg" alt="BS AS Obelisco">
-                </div>
+                    <div class="carousel-item active">
+                        <img src="./images/honolulu.jpg" class="d-block w-100 img-aside" alt="Playa Bs As">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img-aside" src="./images/hawaii3.jpg" alt="Edificio BS As">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 img-aside" src="./images/hawaii2.jpg" alt="BS AS Obelisco">
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-lg-6 d-flex p-4 bg-card-ciudad-text card-ciudad-text">
             <div>
-                <h5  class="pb-3">Bs As - Octubre</h5>
+                <h5 class="pb-3">Bs As - Octubre</h5>
                 <p class="pb-3">
-                Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos Honolulu
-                es la mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al 
-                área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de honolulu han formado una ciudad-
-                condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).
+                    Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos
+                    Honolulu
+                    es la mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se
+                    refiere al
+                    área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de honolulu han formado
+                    una ciudad-
+                    condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).
                 </p>
-                <button type="button" class="btn btn-outline-light">Conocé más</button>    
+                <button type="button" class="btn btn-outline-light">Conocé más</button>
             </div>
         </div>
     </aside>
+    <!--Sección ##Conviértete en Orador + Formulario-->
     <section class="contenedor-form" id="conviertete-orador">
         <h2>Conviértete en <span>orador</span></h2>
-        <p class="pb-3">Anotate como orador para dar una <span> <a href="#" target="_blank">charla ignite</a> .</span> Cuéntanos de qué quieres hablar!</p>
+        <p class="pb-3">Anotate como orador para dar una <span> <a href="#" target="_blank">charla ignite</a> .</span>
+            Cuéntanos de qué quieres hablar!</p>
+        <!--Formulario Bootstrap-->
         <form action="" class="formulario">
             <fieldset>
                 <div class="row">
@@ -163,13 +192,15 @@
                         <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
                     </div>
                     <div class="mb-4 pt-3 mensaje-contenedor" id="textarea">
-                        <textarea class="form-control texto-mensaje" id="Textarea1" placeholder="Sobre qué quieres hablar?" rows="3" required></textarea>
+                        <textarea class="form-control texto-mensaje" id="Textarea1"
+                            placeholder="Sobre qué quieres hablar?" rows="3" required></textarea>
                         <p class="pt-2 pb-2">Recuerda incluir un título para tu charla </p>
                         <button type="submit" class="d-block w-100 btn btn-enviar">Enviar</button>
-                    </div>  
-            </fieldset>  
-        </form>       
+                    </div>
+            </fieldset>
+        </form>
     </section>
+    <!--Footer ##Navegación Footer-->
     <footer class="footer">
         <nav class="map-sitio">
             <ul class="submenu">
@@ -178,12 +209,17 @@
                 <li><a href="#">Prensa</a></li>
                 <li><a href="#">Conferencias</a></li>
                 <li><a href="#">Términos y condiciones</a></li>
-                <li><a href="#">Privacidad</li>
+                <li><a href="#">Privacidad</a></li>
                 <li><a href="#">Estudiantes</a></li>
             </ul>
         </nav>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./appHeader.js"></script>
+    <!--Script Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

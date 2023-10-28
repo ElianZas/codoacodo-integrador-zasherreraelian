@@ -169,16 +169,49 @@ body{
     background-color:#96C93E;
     color:white;
 }
+/*clase que se añade cuando con js se añade el header para que quede posicionado arriba de todo
+el documento*/
+.fixed-top{
+    position:fixed;
+}
 
-/*MEDIA QUERIES*/
+/*######COMPRAR TICKETS######*/
+
+.main-tickets-cards{
+    display:grid;
+    grid-template-columns:  repeat( auto-fit, minmax(auto, 20rem) );
+    margin-top:6rem;
+    justify-content: center;
+    column-gap:.5rem;
+}
+.card-ticket{
+    padding:5rem;
+    display:flex;
+    flex-direction: column;
+    row-gap:1rem;
+    justify-content: center;
+}
+.card-ticket.estudiante{
+    border: solid blue;
+}
+.card-ticket.trainee{
+    border: solid green;
+}
+.card-ticket.junior{
+    border:solid yellow;
+}
+
+/*MEDIA QUERIES INDEX*/
+/*####Desktop*/
 @media (max-width: 1200px) { 
     .card-orador{
         width:60%;
     }
 }
+/*#####Tablets|Notebooks####*/
 @media (max-width: 992px) { 
     .card-orador{
-        width:60%;
+        width:80%;
     }
     .card-img-overlay {
         position:relative;
@@ -198,10 +231,18 @@ body{
         padding:0%;
     }
 }
+/*#####Tablet####*/
 @media (max-width: 768px) { 
     .footer .submenu{
         flex-wrap: wrap;
-        gap:1rem;
+        flex-direction:column;
+        row-gap:1rem;
+    }
+    .botones-card-banner{
+        row-gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
     }
     .banner-texto{
         padding:10%;
@@ -211,6 +252,6 @@ body{
         flex-direction: column;
     }
     .contenedor-cards{
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 }
