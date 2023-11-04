@@ -152,11 +152,23 @@ body{
     align-items: center;
 }
 /*BOTONES COLORES BOOTSTRAP CAMBIOS*/
-.btn-enviar{
+.btn-enviar, .btn-borrar{
     color:white;
     background-color:#96C93E;
 }
-.btn-enviar:hover, .btn-enviar:active, .btn-enviar:focus{
+:root{
+    ---bs-btn-hover-bg:white;
+}
+.btn-secondary{
+    background-color: var(---bs-btn-hover-bg);
+    color:#6C757D;
+}
+.btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus{
+    background-color: var(---bs-btn-hover-bg)!important;
+    color:#6C757D!important;
+}
+
+.btn-enviar:hover, .btn-enviar:active, .btn-enviar:focus, .btn-borrar:hover, .btn-borrar:active, .btn-borrar:focus{
     background-color:#28A744;
     color:white;
 }
@@ -182,23 +194,58 @@ el documento*/
     grid-template-columns:  repeat( auto-fit, minmax(auto, 20rem) );
     margin-top:6rem;
     justify-content: center;
-    column-gap:.5rem;
+    gap:1rem;
 }
 .card-ticket{
-    padding:5rem;
+    padding:2rem;
     display:flex;
     flex-direction: column;
-    row-gap:1rem;
+    row-gap:2rem;
     justify-content: center;
+    height:260px;
+    align-items: center;
+}
+.card-ticket h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.card-ticket h4{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.card-ticket h3{
+    font-size: 1.3rem;
+}
+.card-ticket p {
+    color:#6C757D;
 }
 .card-ticket.estudiante{
-    border: solid blue;
+    border: solid #007BFF 2px;
 }
 .card-ticket.trainee{
-    border: solid green;
+    border: solid #17A2B8 2px;
 }
 .card-ticket.junior{
-    border:solid yellow;
+    border:solid #FFC107 2px;
+}
+
+
+/*Sección Formulario*/
+
+/*A pagar*/
+
+.totalPago{
+    background-color: #CCE5FF;
+    color:#004085;
+    text-align: left;
+    width:98%;
+    padding:1.2rem;
+    border-radius: 5px;
+    display:inline-block;
+    border: solid #B8DAFF 0.5px;
+}
+.totalPago h2{
+    display:inline-block;
 }
 
 /*MEDIA QUERIES INDEX*/

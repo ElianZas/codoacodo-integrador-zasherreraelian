@@ -21,50 +21,87 @@
             <h2>Estudiante</h2>
             <h3>Tiene un descuento</h3>
             <h4>80%</h4>
-            <h5>*Presentar documentación</h5>
+            <p>*Presentar documentación</p>
         </article>
         <article class="card-ticket trainee">
             <h2>Trainee</h2>
             <h3>Tiene un descuento</h3>
             <h4>50%</h4>
-            <h5>*Presentar documentación</h5>
+            <p>*Presentar documentación</p>
         </article>
         <article class="card-ticket junior">
             <h2>Junior</h2>
             <h3>Tiene un descuento</h3>
             <h4>15%</h4>
-            <h5>*Presentar documentación</h5>            
+            <p>*Presentar documentación</p>            
         </article>
     </main>
     <section>
-        <h3>VENTA</h3>
-        <h2>VALOR DE TICKET $200</h2>
+        <h3 class="text-center">VENTA</h3>
+        <h2 class="text-center valor-ticket">VALOR DE TICKET $200</h2>
         <div class="contenedor-form">
-            <form action="" class="formulario">
+            <form id="formulario" action="" method="GET" class="formulario">
                 <fieldset>
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" >
                         </div>
+    
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
+                            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"
+                            >
+                        </div>
+                        <div class=" pt-3">
+                            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"
+                            >
+                        </div>
+    
+                        <div class="col">
+                            <h3> Cantidad </h3>
+                            <input id="id_cantidad" type="number" class="form-control" placeholder="Cantidad" required>
+                        </div>
+    
+                        <div class="col">
+                            <h3> Categoria </h3>
+                            <select class="menu-lista" id="select_id" required>
+                                    <option role="button"  class="dropdown-item" id="t_estudiante" selected="selected" value="estudiante">Estudiante</option>
+                                    <option role="button"  class="dropdown-item" id="t_trainee" value="trainee">Trainee</option>
+                                    <option role="button"  class="dropdown-item"  id="t_junior" value="junior">Junior</option>
+                            </select>
+                        </div>
+                        <div class="row totalPago" id="totalPago">
+                            <h2 id="textoPagar">Total a pagar: $</h2>
                         </div>
                         <div class="mb-4 pt-3 mensaje-contenedor" id="textarea">
-                            <textarea class="form-control texto-mensaje" id="Textarea1"
-                                placeholder="Sobre qué quieres hablar?" rows="3" required></textarea>
-                            <p class="pt-2 pb-2">Recuerda incluir un título para tu charla </p>
-                            <button type="submit" class="d-block w-100 btn btn-enviar">Enviar</button>
+                            <button type="reset" class="col w-50 btn btn-borrar" id="id_borrar">Borrar</button><button  type="submit"
+                                class="col w-50 btn btn-enviar" id="id_resumen" >Resumen</button>
                         </div>
+                    </div>
                 </fieldset>
             </form>
-        </div>  
+        </div>
     </section>
-
-    <!--Script Bootstrap-->
+    <footer class="footer">
+        <nav class="map-sitio">
+            <ul class="submenu">
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Contáctanos</a></li>
+                <li><a href="#">Prensa</a></li>
+                <li><a href="#">Conferencias</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Estudiantes</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="../app.js"></script>
     <script src="../appHeader.js"></script>
+    <!--Script Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous">
     </script>
+
 </body>
+
 </html>
