@@ -1,8 +1,14 @@
-let bodyComprarTickets = document.getElementById("body-comprartickets");
+/*Copiar Header en página Comprar Tickets*/
 
-let newHeader = document.createElement("header");
+//Guardo mi elemento body de la página
+const bodyComprarTickets = document.getElementById("body-comprartickets");
+
+//Creo mi elemento nuevo dentro de la variable newheader
+const newHeader = document.createElement("header");
+//Le agrego una clase a través del método classList a mi Header nuevo
 newHeader.classList.add("contenedor-header");
 
+//Escribo dentro de mi header VACIO todo el código HTML de mi Header original.
 newHeader.innerHTML = `
   <header class="contenedor-header" id="header">
   <!--Nav de Bootstrap-->
@@ -50,8 +56,9 @@ newHeader.innerHTML = `
       </nav>
   </header>
   `;
-bodyComprarTickets.appendChild(newHeader);
-newHeader.classList.add("fixed-top");
+bodyComprarTickets.appendChild(newHeader); //Lo adhiero con el método appendChild, al hijo de BODY.
+//selecciono mi elemento body y le adjunto mi nuevo header con el contenido de mi header original.
+newHeader.classList.add("fixed-top"); //Le agrego una clase definida en css.
 
 
 
