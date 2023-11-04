@@ -50,7 +50,6 @@ newHeader.innerHTML = `
       </nav>
   </header>
   `;
-  // Append the new header element to the parent element
 bodyComprarTickets.appendChild(newHeader);
 newHeader.classList.add("fixed-top");
 

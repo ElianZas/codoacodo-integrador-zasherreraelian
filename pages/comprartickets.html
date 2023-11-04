@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><!--COLOCAR REQUIRED EN LOS CAMPOS.-->
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comprar Tickets</title>
@@ -35,51 +35,52 @@
             <h4>15%</h4>
             <p>*Presentar documentación</p>            
         </article>
+        <section class="seccion-formulario">
+            <h3 class="text-center mb-4">VENTA</h3>
+            <h2 class="text-center valor-ticket mb-4">VALOR DE TICKET $200</h2>
+            <div class="contenedor-form-tickets">
+                <form id="formulario" action="" method="GET" class="formulario">
+                    <fieldset>
+                        <div class="row justify-content-center gap-4 contenedor-campos">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre"  required>
+                            </div>
+        
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"
+                                required>
+                            </div>
+                            <div class="row">
+                                <input type="text" class="form-control px-2" placeholder="Correo" aria-label="Correo"
+                                required>
+                            </div>
+        
+                            <div class="col">
+                                <h3 class="mb-3"> Cantidad </h3>
+                                <input id="id_cantidad" type="number" class="form-control" placeholder="Cantidad" required>
+                            </div>
+                            <div class="col">
+                                <h3 class="mb-3"> Categoria </h3>
+                                <select class="menu-lista btn btn-secondary dropdown-toggle w-100"  role="button" id="select_id" required>
+                                        <option role="button"  class="dropdown-item" id="t_estudiante" selected="selected" value="estudiante">Estudiante</option>
+                                        <option role="button"  class="dropdown-item" id="t_trainee" value="trainee">Trainee</option>
+                                        <option role="button"  class="dropdown-item"  id="t_junior" value="junior">Junior</option>
+                                </select>
+                            </div>
+                            <div class="row totalPago" id="totalPago">
+                                <h2 id="textoPagar">Total a pagar: $</h2>
+                            </div>
+                            <div class="mb-4 pt-3 botones-contenedor-form">
+                                <button type="reset" class="col w-50 btn btn-borrar" id="id_borrar">Borrar</button>
+                                <button  type="submit"
+                                    class="col w-50 btn btn-enviar" id="id_resumen" >Resumen</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
     </main>
-    <section>
-        <h3 class="text-center">VENTA</h3>
-        <h2 class="text-center valor-ticket">VALOR DE TICKET $200</h2>
-        <div class="contenedor-form">
-            <form id="formulario" action="" method="GET" class="formulario">
-                <fieldset>
-                    <div class="row justify-content-center">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" >
-                        </div>
-    
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"
-                            >
-                        </div>
-                        <div class=" pt-3">
-                            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"
-                            >
-                        </div>
-    
-                        <div class="col">
-                            <h3> Cantidad </h3>
-                            <input id="id_cantidad" type="number" class="form-control" placeholder="Cantidad" required>
-                        </div>
-                        <div class="col">
-                            <h3> Categoria </h3>
-                            <select class="menu-lista" id="select_id" required>
-                                    <option role="button"  class="dropdown-item" id="t_estudiante" selected="selected" value="estudiante">Estudiante</option>
-                                    <option role="button"  class="dropdown-item" id="t_trainee" value="trainee">Trainee</option>
-                                    <option role="button"  class="dropdown-item"  id="t_junior" value="junior">Junior</option>
-                            </select>
-                        </div>
-                        <div class="row totalPago" id="totalPago">
-                            <h2 id="textoPagar">Total a pagar: $</h2>
-                        </div>
-                        <div class="mb-4 pt-3 mensaje-contenedor" id="textarea">
-                            <button type="reset" class="col w-50 btn btn-borrar" id="id_borrar">Borrar</button><button  type="submit"
-                                class="col w-50 btn btn-enviar" id="id_resumen" >Resumen</button>
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
-        </div>
-    </section>
     <footer class="footer">
         <nav class="map-sitio">
             <ul class="submenu">
